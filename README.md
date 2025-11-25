@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Pagina mostrar lista de pacientes</title>
+    <title>Página mostrar lista de pacientes</title>
 </head>
 <body>
     <header>
@@ -60,7 +60,7 @@
         var botonBuscar = document.querySelector("#buscar-paciente");
         botonBuscar.addEventListener("click", function(){
             var xhr = new XMLHttpRequest();
-            xhr.open("GET","https://github.com/AlexandraJossVA/Ajax-listado-dinamicopractica.git");
+            xhr.open("GET", "https://raw.githubusercontent.com/AlexandraJossVA/Ajax-listado-dinamicopractica/main/pacientes.json");  // **URL CORRECTA AQUÍ**
 
             xhr.addEventListener("load", function(){
                 if(xhr.status == 200) {
